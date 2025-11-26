@@ -1,54 +1,52 @@
-# Projeto SQL - Mini-mundo Hortifruti  
-Scripts SQL do mini-mundo desenvolvido para a disciplina de Banco de Dados.  
+# Projeto SQL – Mini-mundo Hortifrúti
+
 Autor: Lucas Andrade  
+Disciplina: Banco de Dados  
+Professor: —  
 
 ---
 
-## 📌 Objetivo do Projeto
-Implementar e manipular dados em um banco de dados relacional utilizando comandos SQL (DML), seguindo corretamente:
-
-- Tipos de dados  
-- Integridade referencial  
-- Normalização  
-- Modelagem lógica previamente criada  
-- Boas práticas de versionamento  
+## 📌 Descrição do Projeto
+Este projeto implementa a **criação e manipulação de dados SQL** com base no mini-mundo de um hortifrúti.  
+Inclui DDL e DML, seguindo as exigências da disciplina.
 
 ---
 
-## 📁 Estrutura dos arquivos
+## 🗂 Arquivos entregues
 
-| Arquivo | Finalidade |
-|--------|------------|
-| `inserts.sql` | Popula o banco com dados iniciais |
-| `selects.sql` | Contém consultas com JOIN, WHERE, ORDER BY, LIMIT etc |
-| `updates.sql` | Contém pelo menos 3 comandos UPDATE com condições |
-| `deletes.sql` | Contém pelo menos 3 comandos DELETE com condições |
-
----
-
-## 🧱 Modelo lógico utilizado (resumo)
-
-Entidades principais:
-- **Produto**
-- **Categoria**
-- **Fornecedor**
-- **Cliente**
-- **Venda**
-- **ItemVenda**
-
-Relacionamentos:
-- Produto → Categoria (N:1)  
-- Produto → Fornecedor (N:1)  
-- Venda → Cliente (N:1)  
-- ItemVenda → Venda (N:1)  
-- ItemVenda → Produto (N:1)
+| Arquivo | Descrição |
+|--------|-----------|
+| **01-create-tabelas.sql** | Criação do banco e tabelas |
+| **02-inserts.sql** | Dados inseridos nas tabelas |
+| **03-selects.sql** | Consultas com SELECT + JOIN |
+| **04-updates.sql** | Comandos UPDATE |
+| **05-deletes.sql** | Comandos DELETE |
 
 ---
 
-## 🛠 Como executar os scripts
+## 🛠 Como executar
 
-### MySQL Workbench ou MariaDB:
-1. Crie o banco:
-```sql
-CREATE DATABASE hortifruti;
-USE hortifruti;
+1. Abra o Workbench ou PGAdmin  
+2. Execute **01-create-tabelas.sql**  
+3. Execute **02-inserts.sql**  
+4. Execute os demais arquivos conforme desejar  
+
+---
+
+## ✔ Tecnologias utilizadas
+- MySQL  
+- MySQL Workbench  
+- GitHub  
+
+---
+
+## 📚 Competências avaliadas
+- Manipulação com SQL (DML)
+- Modelagem Lógica → Script SQL
+- Uso de ferramentas reais
+- Versionamento com GitHub
+
+---
+
+## ✔ Status
+Projeto finalizado e funcional.
